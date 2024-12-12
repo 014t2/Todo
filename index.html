@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TODO</title>
+</head>
+<body class="bg-blue-100 flex flex-col min-h-screen justify-between"> 
+
+<header class="bg-blue-300 w-full flex flex-row p-3">
+    <svg class="size-12 m-3 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+    </svg>
+    <h1 class="font-bold text-white mt-6">TODO LIST</h1>
+</header>
+
+<div class="flex flex-col my-4">
+    <div class="w-96 m-auto bg-gray-100 rounded-full shadow-2xl">
+        <form onsubmit="agregarTarea(event)">
+            <input type="text" name="tarea" id="tarea" placeholder="Hacer la compra..." class="border rounded-2xl w-72 pl-3 m-4">
+            <button type="submit" class="text-green-600">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+            </button>
+        </form>
+    </div>
+
+    <div class="mt-10 border rounded-lg mx-auto px-3 w-96 bg-gray-50 shadow-xl mb-1 relative">
+        <h1 class="text-center font-semibold border-b-2 my-2">Listado de tareas</h1>
+        <ul id="contenido">
+
+        </ul>
+    </div>
+</div>
+
+<footer class="bg-blue-300 w-full h-16">
+</footer>
+
+<script src="funciones.js"></script>
+</body>
+</html>
