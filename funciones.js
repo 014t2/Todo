@@ -5,7 +5,8 @@ function agregarTarea(event) {
     
 
     // Obtener el texto de la tarea
-    const tarea = document.querySelector("input").value;
+    const tareaInput = document.querySelector("input");
+    const tarea = tareaInput.value;
 
     if(tarea.trim() === ""){
         alert("Por favor añade una tarea.");
@@ -27,6 +28,7 @@ function agregarTarea(event) {
     // Establecer el texto del boton
     botonEliminar.textContent = "Eliminar";
 
+
     // Agregar una clase a la lista
     botonEliminar.classList.add("ml-16", "border","rounded-full", "bg-red-600", "text-white","p-1");
 
@@ -40,5 +42,8 @@ function agregarTarea(event) {
 
     // Agregar la tarea al contenedor con id "contenido"
     document.getElementById("contenido").appendChild(lista);
+
+    tareaInput.value = "";
+
 }
 
