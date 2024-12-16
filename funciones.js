@@ -40,9 +40,19 @@ function agregarTarea(event) {
         lista.remove();
     });
 
+    // Crear nuevo elemento textarea
+    const descripcion = document.createElement("textarea");
+
+    // Asignar atributos
+    descripcion.setAttribute("placeholder", "Añade una pequeña descripción...");
+
+    // Agregar estilos
+    descripcion.classList.add("w-36", "p-2", "border", "rounded-lg", "m-auto");
+
     // Agregar el checkbox, el texto y el botón de eliminar a la tarea
     lista.appendChild(inputCheckbox);
     lista.appendChild(tareaTexto);
+    lista.appendChild(descripcion);
     lista.appendChild(botonEliminar);
 
     // Agregar el evento 'change' al checkbox para actualizar el estilo cuando esté marcado
