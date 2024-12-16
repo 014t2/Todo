@@ -44,7 +44,7 @@ function agregarTarea(event) {
     const descripcion = document.createElement("textarea");
 
     // Asignar atributos
-    descripcion.setAttribute("placeholder", "Pequeña descripción (opcional)");
+    descripcion.setAttribute("placeholder", "Pequeña descrip.(opcional)");
 
     // Agregar estilos
     descripcion.classList.add("w-36", "p-2", "border", "rounded-lg", "m-auto");
