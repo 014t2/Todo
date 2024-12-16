@@ -33,7 +33,7 @@ function agregarTarea(event) {
     botonEliminar.textContent = "Eliminar";
 
     // Estilo para el botón de eliminar
-    botonEliminar.classList.add("ml-auto", "border", "rounded-full", "bg-red-600", "text-white", "p-1");
+    botonEliminar.classList.add("border", "rounded-full", "bg-red-600", "text-white", "p-1");
 
     // Añadir el evento al botón para eliminar la tarea
     botonEliminar.addEventListener("click", function () {
@@ -44,7 +44,7 @@ function agregarTarea(event) {
     const descripcion = document.createElement("textarea");
 
     // Asignar atributos
-    descripcion.setAttribute("placeholder", "Añade una pequeña descripción...");
+    descripcion.setAttribute("placeholder", "Pequeña descripción (opcional)");
 
     // Agregar estilos
     descripcion.classList.add("w-36", "p-2", "border", "rounded-lg", "m-auto");
