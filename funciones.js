@@ -22,7 +22,7 @@ function agregarTarea(event) {
     inputCheckbox.type = "checkbox";
 
     // Agregar una clase para estilo del checkbox
-    inputCheckbox.classList.add("mr-2", "appearance-none", "w-5", "h-5", "rounded-full", "border", "border-gray-400", "checked:bg-blue-600", "checked:border-blue-600");
+    inputCheckbox.classList.add("mr-2", "appearance-none", "w-5", "h-5", "rounded-full", "border", "border-gray-400", "checked:bg-green-400", "checked:border-green-600");
 
     // Crear el texto de la tarea
     const tareaTexto = document.createElement("span");
